@@ -55,4 +55,16 @@ class NumbersCalculation {
     }
     return result;
   }
+
+  // Task 3
+  List intFromString( String string ) {
+    List<dynamic>? result = [];
+    List<String> splitString = string.split('');
+    splitString.forEach((element) {
+      if ( ! element.contains( RegExp( r'[^0-9]' ) ) ) {
+        result.add( element );
+      }
+    });
+    return result;
+  }
 }
