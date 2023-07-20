@@ -4,5 +4,5 @@ void main(){
   var numberCalculations = NumbersCalculation();
 
   //Task 2
-  print( numberCalculations.uniqueStringsCount(  ));
+  print( numberCalculations.wordToInt(  ));
 }

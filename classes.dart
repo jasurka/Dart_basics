@@ -81,4 +81,28 @@ class NumbersCalculation {
     });
     return result;
   }
+
+  // Task 5
+  List wordToInt() {
+    List<String> sampleList = ['one', 'four', 'cat', 'zero', 'three', 'three', 'night' ];
+    Map zeroNine = {
+      'zero': 0,
+      'one': 1,
+      'two': 2,
+      'three': 3,
+      'four': 4,
+      'five': 5,
+      'six': 6,
+      'seven': 7,
+      'eight': 8,
+      'nine': 9
+    };
+    List result = [];
+    sampleList.forEach( ( element ) {
+      if ( zeroNine.keys.contains( element ) ) {
+        result.add(zeroNine[element]);
+      }
+    });
+    return result.toSet().toList();
+  }
 }
