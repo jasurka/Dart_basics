@@ -67,4 +67,18 @@ class NumbersCalculation {
     });
     return result;
   }
+
+  // Task 4
+  Map uniqueStringsCount() {
+    List<String> sampleList = [ 'open','open', 'book', 'apple', 'apple', 'night', 'night', 'night' ];
+    var result = Map();
+    sampleList.forEach((element) {
+      if ( ! result.containsKey( element ) ) {
+        result[element] = 1;
+      } else {
+        result[element] += 1;
+      }
+    });
+    return result;
+  }
 }
